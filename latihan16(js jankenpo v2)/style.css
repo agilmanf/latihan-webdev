@@ -1,0 +1,134 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/swirl_pattern.png');
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Calibri';
+    margin: 0px auto;
+    padding-bottom: 75px;
+}
+
+h1 {
+    font-size: 42px;
+    color: greenyellow;
+    text-align: center;
+    text-shadow: 0px 3px 0px rgb(148, 223, 62),
+     0px 4px 2px darkolivegreen;
+}
+
+.container {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.player {
+    order: 3;
+    justify-content: space-evenly;
+}
+
+.enemy {
+    order: 1;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(206, 176, 93);
+    border: 3px rgb(148, 128, 71) solid;
+}
+
+.choices {
+    width: 100%;
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.scoreboard {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.scoreboard p {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 0px lightgray, 2px 2px 0px rgb(169, 169, 169);
+}
+
+.scoreboard img {
+    width: 75px;
+    height: 75px;
+    background-color:greenyellow;
+    border-radius: 50%;
+    border: 3px rgb(148, 128, 71) solid;
+    display: inline-block;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+
+.resultText {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+}
+
+.resultText p {
+    background: repeating-linear-gradient(
+  45deg,
+  rgb(235, 235, 26),
+  rgb(238, 238, 38) 10px,
+  rgb(251, 255, 0) 10px,
+  rgb(229, 255, 0) 20px
+);
+    padding: 5px;
+    color: rgb(191, 130, 0);
+    text-shadow: 1px 1px 0px rgb(148, 89, 0), 2px 2px 0px rgb(100, 62, 5);
+    font-size: 32px;
+    border: 3px rgb(238, 212, 19) solid;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.gambarPilihan {
+    width: 90px;
+    height: 100px;
+    background-color: lavender;
+    border: 3px rgb(151, 134, 87) solid;
+    border-radius: 45%;
+    transition:ease-out 100ms;
+}
+
+.player .gambarPilihan:hover {
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 0px 10px 3px gold;
+}
+
+.selected {
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 0px 10px 3px rgb(199, 9, 9);
+}

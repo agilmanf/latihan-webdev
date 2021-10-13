@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Warna JS</title>
+</head>
+<style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        text-align: center;
+        font-family: Calibri;
+        background-color: rgb('255,255,255');
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .kotak {
+        width: 20px;
+        height: 20px;
+        margin: auto;
+        display: inline-block;
+        border: 2px solid white;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    input {
+        display: inline;
+    }
+
+</style>
+
+<body>
+
+    <h1>Main Warna JS Event Handler & Eventlistener</h1>
+    <button type="button" id="tmblUbah">Ubah Warna</button>
+
+    <br><br>
+    <div class="kotak red"></div>
+    <input type="range" name="rSlider" min='0' max="255">
+
+    <br><br>
+    <div class="kotak green"></div>
+    <input type="range" name="gSlider" min='0' max="255">
+
+    <br><br>
+    <div class="kotak blue"></div>
+    <input type="range" name="bSlider" min='0' max="255">
+</body>
+<script src="script.js"></script>
+</html>

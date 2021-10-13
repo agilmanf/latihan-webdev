@@ -1,0 +1,89 @@
+body {
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.detail-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+}
+
+.nomor {
+    flex: 1;
+}
+
+.detail {
+    flex: 5;
+
+}
+
+.acak {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    background-color: rgb(225, 191, 80);
+    color: rgb(72, 56, 3);
+    border-radius: 3px;
+    transition: filter 0.2s;
+}
+
+.acak:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.acak:active {
+    transform: scale(1.1);
+}
+
+.jadwal-container {
+    margin : 50px auto;
+    max-width : 80%;
+    color :black;
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.jadwal-card {
+    margin: 10px;
+    width : 250px;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    line-height: 30px;
+    margin: 0;
+}
+
+h1 {
+    text-shadow: 3px 3px 1px gray;
+}
+
+h3 {
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+    font-variant: small-caps;
+    background-color: gray;
+    padding: 10px 0;
+    margin: 0;
+}

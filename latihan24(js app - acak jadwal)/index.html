@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Acak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jadwal Bacaan Caberawit</h1>
+        <input type="text" maxlength="30" placeholder="Masukan nama Do'a" class="doa" > <button class="doa-submit">submit</button> <br> <br>
+        <input type="text" maxlength="30" placeholder="Masukan nama Surat" class="surat" > <button class="surat-submit">submit</button>
+    </div>
+
+    <div class="detail-container">
+        <div class="nomor">
+            <h3>No</h3>
+            <ul class="no-container">1</ul>
+        </div>
+        <div class="detail">
+            <h3>Nama Surat</h3>
+            <ul class="surat-container"></ul>
+        </div>
+        <div class="detail">
+            <h3>Nama Do'a</h3>
+            <ul class="doa-container"></ul>
+        </div>
+    </div>
+
+    <button class="acak">ACAK JADWAL</button>
+
+    <div class="jadwal-container"></div>
+    
+<script src="script.js"></script>
+</body>
+</html>

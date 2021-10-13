@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "BebasNueue";
+    src: url("../fonts/BebasNeue-Regular.woff");
+    
+}
+
+body {
+    margin: 50px auto;
+    font : 14px/24px 'BebasNueue';
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 52px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+.gallery {
+    margin: 30px auto;
+    width:700px;background-color:lightskyblue;
+    padding: 30px;
+    box-shadow: 0px 0px 5px 3px grey;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin: 0 27px;
+    position: relative;
+}
+
+.gallery .thumbs {
+    box-shadow: 0 0 5px 1px black;
+    
+}
+
+.gallery li,
+.gallery .thumbs,
+.gallery li span {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    transition: .2s;
+    font-size: 0px;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    font-size: inherit;
+}
+
+.clear {
+    clear: both;
+}
+
+.overlay {
+    position: fixed;
+    top :0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 9999;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .5s;
+}
+
+.overlay:target {
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay img {
+    margin-top: 4%;
+    max-height: 85%;
+    box-shadow: 0 0 5px 1px black;
+}
+
+.overlay:target img {
+    animation: imgZoom .5s;
+}
+
+.close {
+    display: inline-block;
+    font-size: 3vh;
+    position:fixed;
+    color: white;
+    text-decoration: none;
+    top: 3%;
+    left: 49%;
+    background-color: lightskyblue;
+    line-height: 2vh;
+    padding: 1vh;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.overlay:target .close {
+    animation: slideDown 1s;
+    opacity: 1;
+    pointer-events: fill;
+}
+
+.overlay .next, .overlay .prev {
+    box-shadow: 0 0 0 black;
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    top:35%;
+    margin-left: 50px;
+}
+
+.overlay .prev{
+    transform: rotateY(180deg);
+    margin-left: -150px;
+}
+
+
+@keyframes imgZoom {
+    0% {
+        transform : scale(0);
+    }
+
+    100% {
+        transform :scale(1);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        margin-top: 20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}

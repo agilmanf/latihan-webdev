@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body {
+    background-color: lightsteelblue;
+}
+
+h1 {
+    font-size: 54px;
+    text-align: center;
+    margin-top: 70px;
+    color: lavender;
+    text-shadow: 0 0 5px gray;
+}
+
+.container {
+    width: 800px;
+    margin: 50px auto;
+}
+
+.jumbo {
+    width: 100%;
+}
+
+.thumbnail {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbs {
+    flex: 1;
+    height: 200px;
+    display: block;
+    cursor: pointer;
+}
+
+.thumbs:hover {
+    opacity: 0.5;
+}
+
+img {
+    border: 5px solid white;
+    box-sizing:border-box;
+}
+
+.fade {
+    opacity: 0.5;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1;}
+}
+
+.selected {
+    opacity: 0.5;
+}
