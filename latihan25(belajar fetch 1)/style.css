@@ -160,10 +160,36 @@ body {
 .container {
     background-color: rgba(0, 0, 0, 0.4);
     margin: auto;
-    width: 900px;
+    width: 90%;
+    max-width: 980px;
     border-radius: 10px;
     padding: 30px;
     box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    font-family: Serpentine;
+    font-weight: bold;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(0.8);
+}
+
+button:active {
+    background-color: rgb(33, 118, 197);
+}
+
+button.active {
+    background-color: rgb(61, 141, 216);
 }
 
 .cards {
@@ -174,7 +200,7 @@ body {
 
 .card {
     background-color: seashell;
-    width: 180px;
+    width: 220px;
     margin: 10px 0;
     text-align: center;
     padding: 10px;
@@ -184,7 +210,7 @@ body {
 }
 
 .card h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -192,7 +218,7 @@ body {
     margin: 5px auto;
     width: 35px;
     line-height: 35px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 50%;
     background-color: rgb(33, 118, 197);
