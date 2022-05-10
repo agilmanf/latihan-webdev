@@ -1,0 +1,60 @@
+body { width:auto; height:auto; color:#00a651; font-family:"Agency FB"; margin:0px auto; padding:0px;}
+p { padding:0px; margin:0px}
+a { text-decoration:none; color:inherit}
+a:hover { font-size:30px; padding:0px; margin:0px auto;}
+ul {padding:0px;margin:0px; cursor:default}
+
+li {	list-style:none; 
+				overflow:hidden;
+				list-style-type:none;
+				display:inline;
+				padding:0px;
+				margin:auto;
+				padding:5px;}
+				
+#wrapper {width:auto; height:auto; margin:0px auto; padding:0px;cursor:default;}
+
+#header {width:auto; height:auto; margin-top:50px;}
+
+#menu {	width:1000px; 
+		height:90px; 
+		background-image:url(../img/contactMenu.png);
+		background-repeat:no-repeat;
+		margin:auto;
+		padding-top:10px;
+		font-size:26px;
+		font-family:funsized; 
+		color:#656565}
+		
+#menuLeft{ width:35%; height:50%;  margin-left:70px; float:left}
+#menuLeft li { margin-right:30px;}
+
+#menuRight li { margin-left:30px;}
+#menuRight{ width:35%; height:50%;  margin-right:70px; float:right; text-align:right}
+
+#content {	width:1000px; 
+			height:auto; 
+			margin:0px auto; 
+			padding:0px; 
+			text-align:center; 
+			font-weight:bold; 
+			margin-top:50px;
+			font-size:24px}
+			
+#title { width:500px; height:80px; font-size:50px; margin:auto; font-family:funsized}
+#desc { width:inherit; height:100px; margin:auto; clear:both; color:#656565; margin-top:30px;}
+#contactList{ width:1000px; height:200px; margin:0px auto; margin-top:20px;}
+
+#emailIcon { background-image:url(../img/emailIcon.png)}
+#phoneIcon { background-image:url(../img/phoneIcon.png)}
+#facebookIcon { background-image:url(../img/facebookIcon.png)}
+
+#email { margin-left:100px}
+
+.kontak {margin-right:50px; margin-left:50px; background-color:#666666l; width:200px; height:250px; float:left}
+.contactIcon { width:200px; height:160px; background-repeat:no-repeat; background-position:center}
+
+#footer{ width:1000px; height:80px; margin:0px auto}
+#logo { width:inherit; height:50px; background-image:url(../img/logoHeader180p.png); clear:both; background-position:center; background-repeat:no-repeat}
+#copyright { clear:both; width:inherit; text-align:center; height:30px; color:#656565; font-weight:bold}
+

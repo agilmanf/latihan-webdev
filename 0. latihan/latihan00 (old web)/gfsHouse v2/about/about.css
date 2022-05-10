@@ -1,0 +1,63 @@
+body { padding:0px; margin:0px auto; color:#FFFFFF; background-image:url(../img/headerMenuBackground.jpg)}
+p { padding:0px; margin:0px;}
+a { text-decoration:none; color:inherit;}
+a:hover { font-size:28px;}
+
+.clicked { color:#00a651; font-size:28px; font-weight:bold}
+
+#wrapper { width: auto; height: auto; background-image:url(../img/aboutBackground.jpg); cursor: default; }
+
+#line { width: auto; height: 50px}
+#header { width:auto; height:70px;background-image:url(../img/HeaderMenuBackground.jpg)}
+
+#menu { width:1000px; height:30px; margin:auto; color:#656565; font-size:26px; font-family:funsized; padding-top:15px;}
+ul {padding:0px;margin:0px; cursor:default}
+li {	list-style:none; 
+				overflow:hidden;
+				list-style-type:none;
+				display:inline;
+				padding:0px;
+				margin:auto;
+				padding:5px;
+				margin-right:5px;}
+				
+#contentContainer { width:auto; height:auto; margin-top:10px;}
+#upperContent { width:1000px; height:500px; margin:auto;}
+#upperContentLeft {	width:400px;
+					height:400px; 
+					float:left;
+					padding:50px;}
+					
+.string 			{ 	width:100px; 
+						height:100px; 	
+						background-image:url(../img/stringPict.png);
+						background-position:center; 
+						background-repeat:no-repeat}
+						
+.slogan	{	font-size:45px;
+			font-family:funsized;
+			padding-top:10px;} 
+					
+#upperContentRight {	width:50%; 
+						height:460px;
+						margin-top:40px; 
+						float:right;
+						background-image:url(../img/GfsHouseLogoAbout.png);
+						background-repeat:no-repeat;
+						background-position:center;}
+						
+#middleContainer { width:auto; height:auto;}
+#middleContent {	width:900px;
+					height:auto;
+					text-align:justify;
+					padding:50px;
+					margin:auto;
+					font-family:"Agency FB";
+					font-weight:bold;
+					font-size:28px}
+						
+#footer{ width:auto; height:inherit; background-image:url(../img/HeaderMenuBackground.jpg); clear:both}
+#footerContent{ width:1000px; height:100px; font-family:"Agency FB"; font-weight:bold; color:#565656; margin:auto}
+#copyright { width:50%; float:right; text-align:right; font-size:18px; height:50%; margin-top:40px;}
+#socialMedia { width:50%; height:50px; margin-top:40px; padding-top:25px }
+#socialMedia ul li img{ width:50px; height:50px}

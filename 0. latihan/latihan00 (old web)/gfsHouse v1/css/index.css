@@ -1,0 +1,69 @@
+body { 
+	margin: auto;
+	padding: 0px;
+	background-color:#000000;
+}
+
+#wrapper {
+	margin: auto;
+	padding: 0px;
+	width: 1366px;
+	height: 768px; 
+	background-image:url(../img/Background.jpg);
+	background-position:center;
+}
+
+#left-container {
+	margin: auto;
+	vertical-align:middle;
+	padding: 0px;
+	width: 40%;
+	height: inherit;
+	font-family:"Agency FB";
+	float: left;
+
+}
+
+#right-container {
+	margin: auto;
+	padding: 0px;
+	width: 100%;
+	height: inherit;
+	float: right;
+	background-image:url(../img/logo.png);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+#menu {
+	width: 100%;
+	height: 70%;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:100px;
+	font-weight:bolder;
+	margin-top:20%;
+}
+
+#list {
+	width: 100%;
+	height: 60%;
+	font-size:40px;
+	font-weight:normal;
+	margin-top:40px;
+	line-height:60px;
+}
+
+#list ul {
+	list-style:none;
+	list-style-type:none;
+	text-align:center;
+	margin:auto;
+	padding:0px;
+}
+
+#junk {
+	width: 8%;
+	height: inherit;
+	float:left
+}

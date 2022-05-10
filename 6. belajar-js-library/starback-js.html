@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        type: "line",
+        quantity: 50,
+        direction: 90,
+        backgroundColor: ["#0e1118", "#232b3e"],
+        speed: 2,
+        randomOpacity: false,
+        starSize: 20,
+        slope: { x: 0, y: 0 },
+        spread: 10,
+      });
+    </script>
+  </body>
+</html>

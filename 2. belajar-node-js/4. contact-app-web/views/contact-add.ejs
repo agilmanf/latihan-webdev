@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-6">
+    <h2>Tambah Contact</h2>
+    <form action="./add" method="post">
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nama"
+          aria-describedby="emailHelp"
+          name="nama"
+          required
+        />
+        <div id="namaError" class="form-text text-danger">
+          Nama yang anda masukan sudah terdaftar
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          required
+        />
+        <div id="emailError" class="form-text text-danger">
+          Email tidak valid
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="hp" class="form-label">Nomer Handphone</label>
+        <input type="text" class="form-control" id="hp" name="hp" required />
+        <div id="namaError" class="form-text text-danger">
+          Nomer handphone tidak valid
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

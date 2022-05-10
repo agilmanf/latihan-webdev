@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/TextPlugin.min.js"></script>
+    <title>Intro GSAP</title>
+  </head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    .blue {
+      background-color: skyblue;
+    }
+    .green {
+      background-color: lightgreen;
+    }
+    .orange {
+      background-color: lightsalmon;
+    }
+  </style>
+  <body>
+    <h2>Welcome to My Website</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ratione
+      vel veritatis quaerat, architecto dolores odit! Eum mollitia harum, quae
+      recusandae, inventore tempora cum quibusdam odio, nobis accusamus magni
+      debitis?
+    </p>
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/Pricing">Pricing</a></li>
+    </ul>
+    <div class="box-container">
+      <div class="box blue"></div>
+      <div class="box green"></div>
+      <div class="box orange"></div>
+    </div>
+    <script>
+      //   const box = document.querySelector(".box");
+      //   gsap.from(".box.blue", {
+      //     duration: 2,
+      //     width: "100%",
+      //     ease: "elastic",
+      //     x: 500,
+      //   });
+
+      //   gsap.from(".box.green", {
+      //     duration: 2,
+      //     delay: 0.15,
+      //     width: "100%",
+      //     ease: "elastic",
+      //   });
+
+      //   gsap.from(".box.orange", {
+      //     duration: 1,
+      //     delay: 0.15,
+      //     ease: "back",
+      //     x: "110vh",
+      //     rotateZ: 360,
+      //   });
+
+      const tl = gsap.timeline({ repeat: 1 });
+      //gsap.registerPlugin(TextPlugin);
+
+      tl.from(".box.blue", {
+        duration: 2,
+        width: "100%",
+        ease: "elastic",
+        x: 500,
+      })
+        .to(".box.green", {
+          duration: 2,
+          delay: 0.15,
+          width: "100%",
+          ease: "elastic",
+        })
+        .from(".box.orange", {
+          duration: 1,
+          delay: 0.15,
+          ease: "back",
+          x: "110vh",
+          rotateZ: 360,
+        })
+        .to(".box", { opacity: 0 });
+
+      const textAnimation = gsap.timeline({
+        repeat: -1,
+        repeatDelay: 1.5,
+        yoyo: true,
+      });
+
+      textAnimation.from("h2", {
+        text: {
+          value: "",
+        },
+        duration: 1,
+        yoyo: true,
+        delay: 0.5,
+        ease: "none",
+      });
+
+      // textAnimation
+      //   .to("h2", {
+      //     text: {
+      //       value: "",
+      //       padSpace: true,
+
+      //       ease: "slow",
+      //     },
+      //     delay: 1,
+      //   })
+      //   .to("h2", {
+      //     duration: 1.5,
+      //     text: {
+      //       value: "My Name is Gilman",
+      //       padSpace: true,
+
+      //       ease: "slow",
+      //     },
+      //     delay: 1,
+      //   });
+      // .to("h2", {
+      //   text: {
+      //     value: "",
+      //     padSpace: true,
+
+      //     ease: "slow",
+      //   },
+      //   delay: 1,
+      // })
+      // .to("h2", {
+      //   text: {
+      //     value: "Hello Bro",
+      //     padSpace: true,
+
+      //     ease: "slow",
+      //   },
+      //   delay: 1,
+      // });
+    </script>
+  </body>
+</html>

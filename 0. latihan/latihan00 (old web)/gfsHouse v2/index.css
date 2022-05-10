@@ -1,0 +1,108 @@
+body {	padding:0px;
+		margin:0px auto;}
+
+#wrapper{	width:auto;
+			height:auto;
+			padding:0px;
+			cursor:default;
+			margin:0px auto;}
+					
+#upperContainer	{	width:auto;
+					height:auto;
+					margin:auto;
+					margin-top:10px;
+					font-family:"Agency FB";}
+
+#headerContainer{	width:1000px;
+					margin:auto;}
+				
+#header	{	width:inherit;
+			height:80px;
+			margin-top:25px;
+			margin-bottom:25px;}
+			
+#headerTitle { width:50%;
+				height:inherit;
+				float:left;
+				background-image:url(img/logoHeader300p.png);
+				background-repeat:no-repeat;}
+				
+#socialMedia {  width:50%;
+				height:30px;
+				padding-top:15px;
+				float:right;
+				text-align:right}
+				
+#socialMedia img {	width:50px;
+					height:50px;}
+				
+#socialMedia ul {	padding:0px;
+					margin:0px;}
+			
+#socialMedia ul li {	list-style:none; 
+						overflow:hidden;
+						list-style-type:none;
+						display:inline;
+						padding:0px;
+						margin:auto;
+						margin-right:5px;}
+		
+#menu	{	width:inherit;
+			height:50px;
+			font-family:funsized;
+			font-size:22px;
+			font-weight:300;
+			color:#656565;
+			cursor:default}
+			
+#menu ul {	padding:0px;
+			margin:0px;}
+			
+#menu ul li {	list-style:none; 
+				overflow:hidden;
+				list-style-type:none;
+				display:inline;
+				padding:0px;
+				margin:auto;
+				padding:5px;
+				margin-right:5px;
+				cursor:pointer;}
+
+#upper			{	width:inherit;
+					background-image:url(img/upperBackground.jpg);}
+
+#upperContent	{	width:1000px;
+					height:500px;
+					margin:auto;}
+
+#upperLeft		{	width:40%;
+					height:400px;
+					margin:auto;
+					float:left;
+					padding:50px;
+					text-align:center;
+					color:#FFFFFF;
+					font-size:26px;}
+					
+#upperRight		{	width:50%;
+					height:inherit;
+					margin:auto;
+					float:right;
+					background-image:url(img/GfsHouseLogo.png)}
+					
+#footer {	width:1000px;
+			height:40px;
+			margin:auto;
+			clear:both;
+			text-align:center;
+			padding-top:20px;
+			font-weight:bold;
+			color:#656565;}
+			
+.title { font-size:50px; font-weight:bold; padding:0px; margin:0px; margin-bottom:15px;}
+.paragraf {padding:0px; margin:0px;}
+.bold { font-weight:bold; margin:0px; padding:0px; margin-top:10px;}
+.clicked {  font-size:25px; font-weight:bold; color:#00a651}
+
+a{ color:inherit; text-decoration:none}
+a:hover { font-size:25px}

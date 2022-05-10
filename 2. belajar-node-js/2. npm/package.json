@@ -1,0 +1,16 @@
+{
+    "name": "learn-npm",
+    "version": "1.0.0",
+    "description": "Belajar NPM",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "mulai": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Gilman Firdaus",
+    "license": "ISC",
+    "dependencies": {
+        "validator": "^13.7.0"
+    }
+}

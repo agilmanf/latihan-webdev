@@ -1,0 +1,83 @@
+body { width:auto; height:auto; margin:0px auto; padding:0px; background-image:url(../img/HeaderMenuBackground.jpg)}
+p { padding:0px; margin:0px}
+a { text-decoration:none; color:inherit}
+a:hover { font-size:26px}
+ul {padding:0px;margin:0px; cursor:default}
+
+li {	list-style:none; 
+				overflow:hidden;
+				list-style-type:none;
+				display:inline;
+				padding:0px;
+				margin:auto;
+				padding:5px;}
+				
+.clicked { color:#00a651; font-weight:bold; font-size:26px;}
+				
+#wrapper {	width:auto; 
+			height:auto; 
+			margin:0px auto; 
+			padding:0px; 
+			color:#656565;
+			cursor:default;
+			font-family:"Agency FB"; 
+			font-weight:bold; }
+			
+#headerContainer { width:auto; height:auto;}
+#menu {	width:1000px; 
+		height:50px;
+		padding-top:30px;
+		margin-bottom:70px;
+		margin-left:20px;
+		font-family:funsized;
+		font-size:24px;
+		font-weight:normal}
+		
+#contentContainer { width:1000px; height:auto; margin:auto; text-align:center;}
+#title { width:inherit; height:70px;font-size:60px; margin-top:50px}
+#desc { width:inherit; height:40px; font-size:28px}
+#donateContainer { width:375px; height:100px;  font-size:62px; padding-top:50px; margin:auto; padding-bottom:10px}
+
+#dollar { width:200px; height:75px; outline:solid 1px #00a651; float:left}
+#dollarSign { width:75px; outline:solid 1px #00a651; height:75px; margin:auto; background-color:#00a651; float:left; color:#FFFFFF; cursor:default;}
+#donateInputField { width:125px; height:75px; float:left; background-color:#FFFFFF}
+
+#donateInputField form { background-color:#D4D4D4; width:inherit; height:inherit; outline:solid 1px #00a651}
+#donateInputField input {	width:102px; 
+							height:52px;
+							outline:solid 0px #00a651;
+							color:#656565;
+							padding:10px;
+							text-align:center;
+							font-size:45px}
+
+#donateButton {	width:150px;
+				height:50px;
+				margin-top:12px;
+				background-image:url(../img/donateButton.png);
+				float:right;
+				color:#FFFFFF;
+				border-radius : 5px;
+				font-size:30px}
+
+#buttonMask {
+	width: inherit;
+	height: inherit;
+	opacity: 0.2;
+	border-radius : inherit;
+	background-color: #000000;
+}
+
+#caution { color:#00a651; font-style:italic}
+#logo { font-size:24px; margin-top:50px;}
+
+#footer{ width:auto; height:auto; clear:both; margin-top:80px}
+#footerContent{ width:1000px; height:50px; font-family:"Agency FB"; font-weight:bold; color:#656565; margin:auto}
+#copyright { width:50%; float:right; text-align:right; font-size:18px; height:50%; margin-top:10px;}
+#socialMedia { width:50%; height:50px; margin-top:40px; padding-top:25px }
+#socialMedia ul li img{ width:50px; height:50px}
+
+.btnEnabled  { opacity: 1; cursor: pointer;}
+.btnDisabled { opacity: 0.5; cursor: default; }
+.maskDisabled { display: none }
+.maskEnabled { display: block; }

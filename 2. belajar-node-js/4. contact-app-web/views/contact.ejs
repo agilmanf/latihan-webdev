@@ -1,0 +1,30 @@
+<% if (contacts.length !== 0) { %>
+<h2>Contact</h2>
+<a href="./contact/add" class="btn btn-primary my-3">Tambah Kontak</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Nomer Handphone</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% contacts.forEach((contact,index) => { index++%>
+    <tr>
+      <th scope="row"><%= index %></th>
+      <td><%= contact.nama %></td>
+      <td><%- contact.hp %></td>
+      <td>
+        <a href="./contact/<%= contact.nama  %>" class="btn btn-success badge"
+          >Detail</a
+        >
+      </td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+<% } else { %>
+<h3>Contact Kosong</h3>
+<% } %>
