@@ -20,12 +20,13 @@ router.get("/todo/:id", (req, res) => {
 });
 
 router.post("/todo", (req, res) => {
-  const { description } = req.body;
+  const { description, title } = req.body;
   pool.query(
-    `INSERT INTO todo (description) VALUES ('${description}')`,
+    `INSERT INTO todo (description, title) VALUES ('${description}','${title}')`,
     (err, result) => {
       if (err) throw err;
 
+      console.log(result);
       res.status(201).send(`Insert to Database Success`);
     }
   );
@@ -33,13 +34,13 @@ router.post("/todo", (req, res) => {
 
 router.put("/todo/:id", (req, res) => {
   const { id } = req.params;
-  const { description } = req.body;
+  const { description, title } = req.body;
   pool.query(
-    `UPDATE todo SET description = '${description}' WHERE tid = ${id}`,
+    `UPDATE todo SET description = '${description}', title = '${title}' WHERE tid = ${id}`,
     (err, result) => {
       if (err) throw err;
 
-      if (results.rowCount === 0) return res.send("ID Not Found");
+      if (result.rowCount === 0) return res.send("ID Not Found");
       res.status(201).send(`Edit Todo Success`);
     }
   );
