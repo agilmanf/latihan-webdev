@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./library.css" />
+    <script src="./library.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>My Library</h1>
+        <a href="/">Back to Home</a>
+      </header>
+      <section>
+        <div id="card-total" class="total active">
+          <h2>Total Buku</h2>
+          <span class="number-total"></span>
+        </div>
+        <div id="card-completed" class="total">
+          <h2>Sudah Dibaca</h2>
+          <span class="number-completed"></span>
+        </div>
+        <div id="card-incomplete" class="total">
+          <h2>Belum Dibaca</h2>
+          <span class="number-incomplete"></span>
+        </div>
+      </section>
+      <main>
+        <section class="content-header">
+          <h3 class="judul">Semua Buku</h3>
+          <form class="search-form">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="cari buku..."
+            />
+          </form>
+        </section>
+
+        <article>
+          <table>
+            <thead>
+              <tr>
+                <td class="col-number">#</td>
+                <td>Judul Buku</td>
+                <td>Penulis</td>
+                <td>Tahun</td>
+                <td>Status</td>
+                <td>Action</td>
+              </tr>
+            </thead>
+            <tbody class="body-table"></tbody>
+          </table>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

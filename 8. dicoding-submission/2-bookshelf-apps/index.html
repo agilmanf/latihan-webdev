@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./library.html">My Library</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section>
+          <h1>Bookshelf Apps</h1>
+          <p class="tagline">
+            Simpan bukumu di rak buku online dan tandai buku yang telah kamu
+            baca!
+          </p>
+          <button class="show-modal-button">Tambahkan Buku Baru</button>
+        </section>
+        <aside><img src="./img/hero.png" alt="Books" /></aside>
+      </main>
+    </div>
+    <div class="modal-container">
+      <div class="modal-backdrop">
+        <div class="modal">
+          <button class="close-modal-button">&#x2716;</button>
+          <h5>Tambah Buku Baru</h5>
+          <span>Isi data buku untuk dimasukan ke library mu!</span>
+          <form class="new-book-form">
+            <label for="judul">
+              <span>Judul Buku</span>
+              <input id="judul" type="text" required autocomplete="off" />
+            </label>
+            <label for="penulis">
+              <span>Penulis</span>
+              <input id="penulis" type="text" required autocomplete="off" />
+            </label>
+            <label for="tahun">
+              <span>Tahun</span>
+              <input id="tahun" type="number" required autocomplete="off" />
+            </label>
+            <label for="selesai" class="checkbox">
+              <span>Selesai Dibaca?</span>
+              <input id="selesai" type="checkbox" />
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
