@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf Apps</title>
-    <link rel="stylesheet" href="./library.css" />
-    <script src="./library.js" defer></script>
+    <link rel="stylesheet" href="library.css" />
+    <script src="library.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header>
         <h1>My Library</h1>
-        <a href="/">Back to Home</a>
+        <a href="index.html">Back to Home</a>
       </header>
       <section>
         <div id="card-total" class="total active">
@@ -53,9 +53,18 @@
               </tr>
             </thead>
             <tbody class="body-table"></tbody>
+            <tfoot>
+              <td colspan="6">
+                <button class="tambah-button" onclick="toggleModal('')">
+                  Tambah Buku
+                </button>
+              </td>
+            </tfoot>
           </table>
         </article>
       </main>
     </div>
+
+    <div class="modal-container"></div>
   </body>
 </html>
