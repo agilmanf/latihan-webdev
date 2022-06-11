@@ -1,0 +1,164 @@
+:root {
+  --orange: blanchedalmond;
+  --green: rgb(225, 255, 205);
+  --blue: rgb(205, 231, 255);
+  --purple: rgb(237, 205, 255);
+}
+
+.note-card {
+  min-width: 300px;
+  max-width: 350px;
+  height: 300px;
+  padding: 30px;
+  background-color: rgb(252, 252, 252);
+  color: #666;
+  position: relative;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.199);
+  box-sizing: border-box;
+}
+
+.note-card time {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.note-card h3 {
+  font-size: 1.2em;
+}
+
+.note-card > hr {
+  margin: 10px 0 15px 0;
+  border: none;
+  border-top: 1px solid rgba(177, 177, 177, 0.295);
+}
+
+.note-card p {
+  font-size: 0.9em;
+}
+
+.note-card .action-container {
+  font-size: 1.7em;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+  left: 0;
+}
+
+/* Variant */
+
+.note-card.orange {
+  background-color: var(--orange);
+}
+
+.note-card.green {
+  background-color: var(--green);
+}
+
+.note-card.blue {
+  background-color: var(--blue);
+}
+
+.note-card.purple {
+  background-color: var(--purple);
+}
+
+.note-card ion-icon {
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.note-card ion-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.note-card ion-icon:active {
+  transform: scale(1);
+}
+
+ion-icon[name="checkbox"] {
+  opacity: 1;
+}
+
+.color-palette {
+  position: relative;
+}
+
+.palette {
+  width: 30px;
+  height: 100px;
+  padding: 4px;
+  position: absolute;
+  top: -105px;
+  left: -2px;
+  background-color: white;
+  border: 1px solid rgba(156, 156, 156, 0.37);
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.363);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: scaleY(0);
+  transform-origin: center bottom;
+  transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.palette.active {
+  transform: scaleY(1);
+}
+
+.palette > div {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.palette > div:hover {
+  border: 1px solid rgba(177, 177, 177, 0.486);
+}
+
+#orange {
+  background-color: var(--orange);
+}
+
+#blue {
+  background-color: var(--blue);
+}
+
+#green {
+  background-color: var(--green);
+}
+
+#purple {
+  background-color: var(--purple);
+}
+
+.input-title,
+.input-body {
+  width: 100%;
+  background-color: inherit;
+  resize: none;
+  border: 1px solid rgba(150, 150, 150, 0.342);
+}
+
+.input-title {
+  font-size: 1.3em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #666;
+}
+
+.input-sisa {
+  color: rgb(52, 66, 189);
+}
+
+.input-body {
+  font-family: "Inter", sans-serif;
+  color: #666;
+}

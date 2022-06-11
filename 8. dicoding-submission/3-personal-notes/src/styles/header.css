@@ -1,0 +1,48 @@
+header {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #fe8685;
+  text-shadow: 1px 1px 3px rgba(240, 240, 240, 0.884);
+  font-size: 2em;
+}
+
+.search {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+.search:focus-within {
+  box-shadow: 0 0 10px rgba(135, 207, 235, 0.63);
+}
+
+.search input {
+  border: none;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search ion-icon {
+  color: rgb(209, 209, 209);
+  text-align: center;
+  width: 10%;
+  cursor: pointer;
+}
+
+.search ion-icon:hover {
+  color: rgb(109, 109, 109);
+  transform: scale(1.2);
+}

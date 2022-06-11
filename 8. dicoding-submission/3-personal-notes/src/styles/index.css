@@ -1,0 +1,94 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Pacifico&family=Ubuntu:wght@300;400;700&display=swap");
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(236, 236, 236);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+hr,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  min-height: 100vh;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.11);
+  display: flex;
+}
+
+aside {
+  position: relative;
+  width: 230px;
+}
+
+.content {
+  flex: 4;
+  background-color: rgb(232, 239, 243);
+  padding: 0px 50px 50px;
+}
+
+.content > hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.171);
+  margin-bottom: 30px;
+}
+
+.notecard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.note-add {
+  min-width: 300px;
+  max-width: 350px;
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  color: #666;
+  background-color: rgba(102, 102, 102, 0.13);
+  position: relative;
+  border: 1px solid rgba(196, 196, 196, 0.39);
+  box-sizing: border-box;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.note-add:hover {
+  opacity: 1;
+}
+
+.note-add ion-icon {
+  margin: auto;
+  font-size: 3em;
+  color: rgba(160, 160, 160, 0.671);
+}

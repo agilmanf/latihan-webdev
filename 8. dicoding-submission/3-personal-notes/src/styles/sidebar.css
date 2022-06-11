@@ -1,0 +1,35 @@
+.sidebar {
+  background-color: #0f123f;
+  color: white;
+  height: 100%;
+  box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.479);
+  position: fixed;
+  width: inherit;
+}
+
+.sidebar h1 {
+  padding: 16px 0px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.sidebar li {
+  padding: 12px 10px 12px 40px;
+  cursor: pointer;
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.sidebar li:hover {
+  background-color: rgb(176, 214, 230);
+  color: #0f123f;
+}
+
+.sidebar li.active {
+  background-color: skyblue;
+}
+
+.sidebar li.active:hover {
+  color: white;
+}
